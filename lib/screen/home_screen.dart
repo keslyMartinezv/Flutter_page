@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:page_u2/widgets/widget_drawer.dart';
 
   @override
   Widget build(BuildContext context) {
@@ -15,22 +16,32 @@ class HomeScreen extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return SafeArea(
+      child: Scaffold(
       appBar: AppBar(
-        leading: const Icon(Icons.menu, color: Colors.white),
         title: const Text('Más Caja', style: TextStyle(color: Colors.white)),
-      
+        backgroundColor: Colors.blue,
         actions: const [
-          Padding(padding:  EdgeInsets.symmetric(horizontal: 16),
+         Padding(padding:  EdgeInsets.symmetric(horizontal: 16),
           child: Icon(Icons.notifications, color: Colors.white),
-          
-          
-          ),
+         ),
         ],
-
-        backgroundColor:Colors.blue[500],
-        
       ),
+      drawer: const ListMenu(),
+        
+      
+        //actions: const [
+         // Padding(padding:  EdgeInsets.symmetric(horizontal: 16),
+         // child: Icon(Icons.notifications, color: Colors.white),
+          
+          
+         // ),
+        //],
+
+
+        
+  
+        
       body: Card(
         child: Container(
           color: const  Color.fromARGB(255, 33, 150, 243),
@@ -79,6 +90,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
+    )
     );
   
   }
