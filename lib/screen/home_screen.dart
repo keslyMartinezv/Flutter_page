@@ -38,21 +38,10 @@ class HomeScreen extends StatelessWidget {
                 leading: Icon(Icons.emoji_emotions, color: Colors.white),
                 title: Text('Hola, Usuario'),
               ),
-              
-              
             ],
-            
-             
           ),
-        
         ),
-        
-        
       ),
-      
-
-      
-  
        bottomNavigationBar: NavigationBar( 
         onDestinationSelected: (int index) {
           setState(() {
@@ -78,7 +67,6 @@ class HomeScreen extends StatelessWidget {
       ),
     )
     );
-  
   }
   
   void setState(Null Function() param0) {}
