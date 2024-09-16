@@ -28,20 +28,6 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       drawer: const ListMenu(),
-        
-      
-        //actions: const [
-         // Padding(padding:  EdgeInsets.symmetric(horizontal: 16),
-         // child: Icon(Icons.notifications, color: Colors.white),
-          
-          
-         // ),
-        //],
-
-
-        
-  
-        
       body: Card(
         child: Container(
           color: const  Color.fromARGB(255, 33, 150, 243),
